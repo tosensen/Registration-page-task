@@ -1,0 +1,177 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+.container{
+    width: 70%;
+    height: 500px;
+    margin: 80px auto 60px;
+    display: flex;
+}
+
+.item{
+    width: 50%;
+}
+
+
+h1{
+ font-size: 40px;
+ color: white;
+ margin-top: 150px;
+ font-weight: 700;
+}
+
+.item1 p{
+    margin-right: 60px;
+    line-height: 1.5em;
+    color: hsl(0, 71%, 97%);
+}
+
+.item2-1, .item2-2{
+    border-radius: 8px;
+}
+
+.item2-1{
+    text-align: center;
+    padding: 2px;
+    color: white;
+    font-size: 0.87em;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 7px;
+    letter-spacing: 0.07em;
+}
+.trial, button{
+    font-weight: 700;
+}
+.item2-2{
+    width: 100%;
+    background-color: white;
+    height: 420px;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 32px 0px 0px;
+    margin: 25px auto 0px;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+input{
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px grey solid;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    font-size: 0.87em;
+    font-weight: 500;
+    color: hsl(249, 10%, 26%);
+    background-image: none;
+    transition: background-image 4s 2s ease-in, border-color .5s .5s linear, border-width .5s 1s;
+}
+
+::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+input:invalid{
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    border-color: hsl(0, 100%, 74%);
+}
+
+input:hover, input:active, input:focus{
+    border: 1px grey solid;
+}
+
+input:valid{
+    border-color: rgb(9, 165, 56);
+    border-width: 2px;
+}
+
+button{
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    padding: 18px;
+    border-bottom: 3px rgba(12, 146, 12, 0.3) solid;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(10, 209, 93);
+    color: white;
+}
+
+.item2-2 p{
+    padding: 8px 0px;
+    text-align: center;
+    font-size: 0.8em;
+    color: hsl(246, 25%, 77%);
+}
+.item2-2 a:link{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(0, 100%, 74%) ;
+}
+.item2-2 a:visited{
+    color: hsl(0, 100%, 74%) ;
+}
+.item2-2 a:hover{
+    color: red;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 912px){
+    body{
+        background-image: url(bg-intro-mobile.png);
+}
+    .container{
+        width: 85%;
+        height: fit-content;
+        margin: 90px auto 60px;
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    h1{
+        font-size: 28px;
+        margin-top: 0px;
+    }
+    .item1{
+        text-align: center;
+    }
+    .item1 p{
+        margin-right: 0px;
+        letter-spacing: 0.07em;
+    } 
+    .item2-1{
+        padding: 8px 50px;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .item2-2{
+        height: 445px;
+    }
+    .item2-2 p{
+        letter-spacing: 0.07em;
+        padding: 5px 25px;
+    }
+}
